@@ -194,32 +194,6 @@ main {
     top: 25px;
 }
 
-/*.img-one {*/
-/*    grid-area: 1 / 1 / 2 / 2;*/
-/*}*/
-
-/*.img-two {*/
-/*    grid-area: 2 / 1 / 3 / 2;*/
-/*}*/
-
-/*.img-three {*/
-/*    display: block;*/
-/*    grid-area: 1 / 2 / 3 / 4;*/
-/*}*/
-
-/*.img-four {*/
-/*    grid-area: 1 / 4 / 2 / 5;*/
-/*}*/
-
-/*.img-five {*/
-/*    grid-area: 1 / 5 / 2 / 6;*/
-/*}*/
-
-/*.img-six {*/
-/*    display: block;*/
-/*    grid-area: 2 / 4 / 3 / 6;*/
-/*}*/
-
 .image-container {
     position: relative;
     margin-bottom: 10px;
@@ -253,10 +227,6 @@ main {
     border-radius: 10px;
     transition: all 0.6s linear;
 }
-
-/*.image-container:hover .overlay1 {*/
-/*    opacity: 0;*/
-/*}*/
 
 .overlay1 h4 {
     position: absolute;
@@ -292,14 +262,8 @@ main {
     flex-direction: column;
 }
 
-/*.weekly-schedule h3 {*/
-/*    margin-top: -70px;*/
-/*    font-size: 1.3rem;*/
-/*    font-weight: 700;*/
-/*}*/
-
 .calendar {
-    margin-top: -80px;
+    margin-top: -95px;
 }
 
 .day-and-activity {
@@ -344,35 +308,9 @@ main {
     transform: translateY(-10px);
 }
 
-/*.day h1 {*/
-/*    font-size: 1.6rem;*/
-/*    font-weight: 600;*/
-/*}*/
-
-/*.day p {*/
-/*    text-transform: uppercase;*/
-/*    font-size: 0.9rem;*/
-/*    font-weight: 600;*/
-/*    transform: translateY(-3px);*/
-/*}*/
-
 .activity {
     border-left: 3px solid #484d53;
 }
-
-/*.participants {*/
-/*    display: flex;*/
-/*    margin-left: 20px;*/
-/*}*/
-
-/*.participants img {*/
-/*    width: 28px;*/
-/*    height: 28px;*/
-/*    border-radius: 50%;*/
-/*    z-index: calc(2 * var(--i));*/
-/*    margin-left: -10px;*/
-/*    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 3px;*/
-/*}*/
 
 .activity h2 {
     margin-left: 10px;
@@ -427,18 +365,12 @@ main {
     display: block;
 }
 
-/*.personal-bests h1 {*/
-/*    margin-top: 20px;*/
-/*    font-size: 1.3rem;*/
-/*    font-weight: 700;*/
-/*}*/
-
 .personal-bests-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 150px);
     gap: 10px;
-    margin-top: 10px;
+    margin-top: -10px;
 }
 
 .best-item {
@@ -599,8 +531,8 @@ main {
     aspect-ratio: 1/1;
     background: conic-gradient(
             from 0deg,
-            #590b94 0%,
-            #590b94 0% var(--i),
+            #7EA1FF 0%,
+            #7EA1FF 0% var(--i),
             #b3b2b2 var(--i),
             #b3b2b2 100%
     );
@@ -634,7 +566,8 @@ main {
 .friends-activity h1 {
     font-size: 1.2rem;
     font-weight: 700;
-    margin: 15px 0 10px 15px;
+    /*margin: 15px 0 10px 15px;*/
+    margin: 30px 0 20px 15px;
 }
 
 .card-container {
@@ -653,6 +586,7 @@ main {
 
 .card-two {
     display: block;
+    opacity: 0;
 }
 
 .card-user-info {
