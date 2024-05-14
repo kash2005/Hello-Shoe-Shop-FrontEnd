@@ -167,11 +167,6 @@ main {
 
 /* ACTIVITIES */
 
-.activities h1 {
-    margin: 0 0 20px;
-    font-size: 1.4rem;
-    font-weight: 700;
-}
 
 .activities #userh1 {
     margin: 0 0 20px;
@@ -192,33 +187,38 @@ main {
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(2, 150px);
     column-gap: 10px;
+    position: relative;
+    margin-bottom: 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 3px;
+    border-radius: 10px;
+    top: 25px;
 }
 
-.img-one {
-    grid-area: 1 / 1 / 2 / 2;
-}
+/*.img-one {*/
+/*    grid-area: 1 / 1 / 2 / 2;*/
+/*}*/
 
-.img-two {
-    grid-area: 2 / 1 / 3 / 2;
-}
+/*.img-two {*/
+/*    grid-area: 2 / 1 / 3 / 2;*/
+/*}*/
 
-.img-three {
-    display: block;
-    grid-area: 1 / 2 / 3 / 4;
-}
+/*.img-three {*/
+/*    display: block;*/
+/*    grid-area: 1 / 2 / 3 / 4;*/
+/*}*/
 
-.img-four {
-    grid-area: 1 / 4 / 2 / 5;
-}
+/*.img-four {*/
+/*    grid-area: 1 / 4 / 2 / 5;*/
+/*}*/
 
-.img-five {
-    grid-area: 1 / 5 / 2 / 6;
-}
+/*.img-five {*/
+/*    grid-area: 1 / 5 / 2 / 6;*/
+/*}*/
 
-.img-six {
-    display: block;
-    grid-area: 2 / 4 / 3 / 6;
-}
+/*.img-six {*/
+/*    display: block;*/
+/*    grid-area: 2 / 4 / 3 / 6;*/
+/*}*/
 
 .image-container {
     position: relative;
@@ -227,12 +227,12 @@ main {
     border-radius: 10px;
 }
 
-.image-container img {
-    width: 100%;
-    height: 100%;
-    border-radius: 10px;
-    object-fit: cover;
-}
+/*.image-container img {*/
+/*    width: 100%;*/
+/*    height: 100%;*/
+/*    border-radius: 10px;*/
+/*    object-fit: cover;*/
+/*}*/
 
 .overlay1 {
     position: absolute;
@@ -254,14 +254,27 @@ main {
     transition: all 0.6s linear;
 }
 
-.image-container:hover .overlay1 {
-    opacity: 0;
+/*.image-container:hover .overlay1 {*/
+/*    opacity: 0;*/
+/*}*/
+
+.overlay1 h4 {
+    position: absolute;
+    margin-bottom: 200px;
+    margin-left: 40px;
+    right:550px;
+    color: #484d53;
+    opacity: 20;
 }
 
-.overlay1 h3 {
-    margin-bottom: 8px;
-    margin-right: 10px;
-    color: #fff;
+.overlay1 p {
+    position: absolute;
+    margin-bottom: 50px;
+    /*margin-right: 10px;*/
+    color: #000000;
+    width: 500px;
+    right: 380px
+    /*z-index: 9999;*/
 }
 
 /* LEFT BOTTOM */
