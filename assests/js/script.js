@@ -11,11 +11,14 @@ signInButton.addEventListener('click', () => {
 });
 
 window.addEventListener('load',function (){
-    const loadingScreen = document.querySelector('#dashboard');
-    loadingScreen.style.display = 'none';
-
     const loadingScreen1 = document.querySelector('#container');
     loadingScreen1.style.display = 'block';
+
+    const loadingScreen2 = document.querySelector('#sideBar');
+    loadingScreen2.style.display = 'none';
+
+    const loadingScreen3 = document.querySelector('.dashboard-content');
+    loadingScreen3.style.display = 'none';
 
 });
 
@@ -25,18 +28,17 @@ $(document).ready(function (){
         const loadingScreen1 = document.querySelector('#container');
         loadingScreen1.style.display = 'none';
 
-        const loadingScreen2 = document.querySelector('#dashboard');
+        const loadingScreen2 = document.querySelector('#sideBar');
         loadingScreen2.style.display = 'block';
+
+        const loadingScreen3 = document.querySelector('.dashboard-content');
+        loadingScreen3.style.display = 'none';
     });
 });
 
-const navItems = document.querySelectorAll(".nav-item");
+let btn = document.querySelector('#menu-btn');
+let sideBar = document.querySelector('#sideBar');
 
-navItems.forEach((navItem, i) => {
-    navItem.addEventListener("click", () => {
-        navItems.forEach((item, j) => {
-            item.className = "nav-item";
-        });
-        navItem.className = "nav-item active";
-    });
-});
+btn.onclick = function() {
+    sideBar.classList.toggle('active');
+}
