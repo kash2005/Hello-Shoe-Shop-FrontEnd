@@ -34,7 +34,7 @@ $(document).ready(function (){
         const loadingScreen4 = document.querySelector('#supplier');
         loadingScreen4.style.display = 'none';
 
-        $("#dashboardPage").eq(0).css("background","#892CDC");
+        $("#dashboardPage").eq(0).css("background","#7EA1FF");
         $("#dashboardIcon").eq(0).css("color","#eee");
         $("#dashboardName").eq(0).css("color","#eee");
 
@@ -42,7 +42,7 @@ $(document).ready(function (){
         $("#customerIcon").eq(0).css("color","black");
         $("#customerName").eq(0).css("color","black");
 
-        $("#supplierPage").eq(0).css("background","#892CDC");
+        $("#supplierPage").eq(0).css("background","#7EA1FF");
         $("#supplierIcon").eq(0).css("color","#eee");
         $("#supplierName").eq(0).css("color","#eee");
 
@@ -65,7 +65,7 @@ $(document).ready(function (){
         const loadingScreen4 = document.querySelector('#supplier');
         loadingScreen4.style.display = 'none';
 
-        $("#customerPage").eq(0).css("background","#892CDC");
+        $("#customerPage").eq(0).css("background","#7EA1FF");
         $("#customerIcon").eq(0).css("color","#eee");
         $("#customerName").eq(0).css("color","#eee");
 
@@ -73,7 +73,7 @@ $(document).ready(function (){
         $("#dashboardIcon").eq(0).css("color","black");
         $("#dashboardName").eq(0).css("color","black");
 
-        $("#supplierPage").eq(0).css("background","#892CDC");
+        $("#supplierPage").eq(0).css("background","#7EA1FF");
         $("#supplierIcon").eq(0).css("color","#eee");
         $("#supplierName").eq(0).css("color","#eee");
 
@@ -96,11 +96,11 @@ $(document).ready(function (){
         const loadingScreen4 = document.querySelector('#supplier');
         loadingScreen4.style.display = 'block';
 
-        $("#customerPage").eq(0).css("background","#892CDC");
+        $("#customerPage").eq(0).css("background","#7EA1FF");
         $("#customerIcon").eq(0).css("color","#eee");
         $("#customerName").eq(0).css("color","#eee");
 
-        $("#dashboardPage").eq(0).css("background","#892CDC");
+        $("#dashboardPage").eq(0).css("background","#7EA1FF");
         $("#dashboardIcon").eq(0).css("color","#eee");
         $("#dashboardName").eq(0).css("color","#eee");
 
