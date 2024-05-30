@@ -4,144 +4,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="height=device-height,width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
     <title>Hello Shoe Shop</title>
-    <link rel="stylesheet" href="assests/css/loginPage.css">
-    <link rel="stylesheet" href="assests/css/DashboardPage.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css">
+    <!-- Boxicons CDN Link -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <meta name="viewport"
+          content="height=device-height,width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+    <link rel="stylesheet" href="assests/css/index.css">
+</head>
 </head>
 <body>
-<div class="container" id="container">
-    <div class="form-container sign-up-container">
-        <form action="#">
-            <h1>Create Account</h1>
-            <div class="social-container">
-                <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
-                <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
-                <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
-            </div>
-            <span>or use your email for registration</span>
-            <input type="text" placeholder="Name" />
-            <input type="email" placeholder="Email" />
-            <input type="password" placeholder="Password" />
-            <button>Sign Up</button>
-        </form>
-    </div>
-    <div class="form-container sign-in-container">
-        <form action="#">
-            <h1>Sign in</h1>
-            <div class="social-container">
-                <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
-                <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
-                <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
-            </div>
-            <span>or use your account</span>
-            <input id="email" type="email" placeholder="Email" />
-            <input id="password" type="password" placeholder="Password" />
-            <a href="#">Forgot your password?</a>
-            <button id="signInBtn">Sign In</button>
-        </form>
-    </div>
-    <div class="overlay-container">
-        <div class="overlay">
-            <div class="overlay-panel overlay-left">
-                <h1>Welcome Back!</h1>
-                <p>To keep connected with us please login with your personal info</p>
-                <button class="ghost" id="signIn">Sign In</button>
-            </div>
-            <div class="overlay-panel overlay-right">
-                <h1>Hello, User!</h1>
-                <p>Enter your personal details and start new account</p>
-                <button class="ghost" id="signUp">Sign Up</button>
+<main id="loginPage">
+    <div class="login-container" id="container">
+        <div class="form-container sign-up-container">
+            <form action="#">
+                <h1>Create Account</h1>
+                <div class="social-container">
+                    <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                    <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+                <span>or use your email for registration</span>
+                <input type="text" placeholder="Name" />
+                <input type="email" placeholder="Email" />
+                <input type="password" placeholder="Password" />
+                <button>Sign Up</button>
+            </form>
+        </div>
+        <div class="form-container sign-in-container">
+            <form id="login-form" action="#">
+                <h1>Sign in</h1>
+                <div class="social-container">
+                    <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                    <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+                <span>or use your account</span>
+                <input id="email" type="email" placeholder="Email" />
+                <input id="password" type="password" placeholder="Password" />
+                <a href="#">Forgot your password?</a>
+                <button id="signInBtn" type="submit">Sign In</button>
+            </form>
+        </div>
+        <div class="overlay-container">
+            <div class="overlay">
+                <div class="overlay-panel overlay-left">
+                    <h1>Welcome Back!</h1>
+                    <p class="login-desc">To keep connected with us please login with your personal info</p>
+                    <button class="ghost" id="signIn">Sign In</button>
+                </div>
+                <div class="overlay-panel overlay-right">
+                    <h1>Hello, User!</h1>
+                    <p class="login-desc">Enter your personal details and start new account</p>
+                    <button class="ghost" id="signUp">Sign Up</button>
+                </div>
             </div>
         </div>
     </div>
-</div>
-
-<div id="sideBar">
-    <div class="top">
-        <div class="logo">
-            <i class="bx bxl-codepen"></i>
-            <span>HelloShoe Shop</span>
-        </div>
-        <i class="bx bx-menu" id="menu-btn"></i>
-    </div>
-
-    <div class="user">
-        <img class="user-img" src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dXNlcnxlbnwwfHwwfHx8MA%3D%3D" alt="me">
-        <div>
-            <p class="bold">Sahan</p>
-            <p>User</p>
-        </div>
-    </div>
-
-    <ul>
-        <li>
-            <a href="#">
-                <i class="bx bxs-grid-alt"></i>
-                <span class="nav-item">Dashboard</span>
-            </a>
-            <span class="tooltip">Dashboard</span>
-        </li>
-        <li>
-            <a href="#">
-                <i class="bx bx-body"></i>
-                <span class="nav-item">Customer</span>
-            </a>
-            <span class="tooltip">Customer</span>
-        </li>
-        <li>
-            <a href="#">
-                <i class="bx bxs-shopping-bag"></i>
-                <span class="nav-item">Products</span>
-            </a>
-            <span class="tooltip">Products</span>
-        </li>
-        <li>
-            <a href="#">
-                <i class="bx bx-food-menu"></i>
-                <span class="nav-item">Orders</span>
-            </a>
-            <span class="tooltip">Orders</span>
-        </li>
-        <li>
-            <a href="#">
-                <i class="bx bx-body"></i>
-                <span class="nav-item">Suppliers</span>
-            </a>
-            <span class="tooltip">Suppliers</span>
-        </li>
-        <li>
-            <a href="#">
-                <i class="bx bx-cog"></i>
-                <span class="nav-item">Setting</span>
-            </a>
-            <span class="tooltip">Setting</span>
-        </li>
-        <li>
-            <a href="#">
-                <i class="bx bx-log-out"></i>
-                <span class="nav-item">Logout</span>
-            </a>
-            <span class="tooltip">Logout</span>
-        </li>
-    </ul>
-</div>
-
-<div class="main-content">
-    <div class="sideBar-container">
-        <h1>User Dashboard</h1>
-        <p>You can see here sumaries about this application</p>
-    </div>
-</div>
-
-<!--<section id="customer" class="form">-->
-
-<!--</section>-->
-
-<!--<section id="item" class="form">-->
-<!--    <h1>hiii</h1>-->
-<!--</section>-->
-
+</main>
 
 <footer>
     <p>
@@ -151,7 +71,9 @@
         <a target="_blank" href="">Hello Shoe Shop</a>.
     </p>
 </footer>
+
 <script src="assests/lib/jquery.min.js"></script>
-<script src="assests/js/script.js"></script>
+<script src="assests/js/index.js"></script>
+<script type="module" src="controller/userController.js"></script>
 </body>
 </html>
